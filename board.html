@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자능사 라운지 | 부업가정신</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>body { font-family: 'Pretendard', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 내비게이션 바 (동일하게 유지) -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-slate-900 tracking-tight">부업가정신.</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="columns.html" class="text-gray-600 hover:text-slate-900 font-medium">전문 칼럼</a>
+                <a href="studies.html" class="text-gray-600 hover:text-slate-900 font-medium">실전 스터디</a>
+                <a href="market.html" class="text-gray-600 hover:text-slate-900 font-medium">지식 마켓</a>
+                <a href="board.html" class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1">자능사 라운지(게시판)</a>
+                <a href="#" class="bg-slate-900 text-white px-5 py-2 rounded-md font-semibold hover:bg-slate-800">가입하기</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 게시판 헤더 -->
+    <section class="bg-white border-b border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">자능사 라운지</h1>
+            <p class="text-gray-500">실전 비즈니스 기획안을 리뷰하고, 공간 및 상권에 대한 심도 있는 인사이트를 나눕니다.</p>
+        </div>
+    </section>
+
+    <!-- 게시판 리스트 영역 -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-6">
+                <div class="text-sm text-gray-500">총 <span class="font-bold text-slate-900">1,204</span>개의 인사이트</div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-500 text-sm">글쓰기</button>
+            </div>
+
+            <!-- 테이블형 게시판 -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-50 text-gray-600 text-sm border-b border-gray-200">
+                            <th class="py-4 px-6 font-medium w-24 text-center">번호</th>
+                            <th class="py-4 px-6 font-medium w-32">분류</th>
+                            <th class="py-4 px-6 font-medium">제목</th>
+                            <th class="py-4 px-6 font-medium w-32">작성자</th>
+                            <th class="py-4 px-6 font-medium w-24 text-center">조회</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-800">
+                        <!-- 공지/인기글 -->
+                        <tr class="bg-blue-50 border-b border-gray-100 hover:bg-blue-100 transition cursor-pointer">
+                            <td class="py-4 px-6 text-center"><span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">HOT</span></td>
+                            <td class="py-4 px-6 text-blue-700 font-semibold">공실기획</td>
+                            <td class="py-4 px-6 font-bold text-slate-900">[필독] 화양동 10-1 건물 공실 밸류업 기획안 및 수익률 분석 시트 공유</td>
+                            <td class="py-4 px-6 text-gray-600">시스템설계자</td>
+                            <td class="py-4 px-6 text-center text-gray-500">3,421</td>
+                        </tr>
+                        <!-- 일반 게시글 -->
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition cursor-pointer">
+                            <td class="py-4 px-6 text-center text-gray-400">1204</td>
+                            <td class="py-4 px-6 text-gray-500">운영노하우</td>
+                            <td class="py-4 px-6 hover:text-blue-600 transition">소형 평수 상가 기획 시 무인 창고 및 무인 빨래방 회전율 한계점</td>
+                            <td class="py-4 px-6 text-gray-600">공간가치창출</td>
+                            <td class="py-4 px-6 text-center text-gray-500">214</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition cursor-pointer">
+                            <td class="py-4 px-6 text-center text-gray-400">1203</td>
+                            <td class="py-4 px-6 text-gray-500">브랜딩</td>
+                            <td class="py-4 px-6 hover:text-blue-600 transition">웰니스 테마 숙박(레스텔 등) 타겟팅 시 외국인 관광객 유입 전략</td>
+                            <td class="py-4 px-6 text-gray-600">인컴빌더</td>
+                            <td class="py-4 px-6 text-center text-gray-500">188</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition cursor-pointer">
+                            <td class="py-4 px-6 text-center text-gray-400">1202</td>
+                            <td class="py-4 px-6 text-gray-500">상권분석</td>
+                            <td class="py-4 px-6 hover:text-blue-600 transition">대구 스펙트럼시티 2층 150평 규모 대형 키즈카페 입지 분석</td>
+                            <td class="py-4 px-6 text-gray-600">상가헌터</td>
+                            <td class="py-4 px-6 text-center text-gray-500">156</td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50 transition cursor-pointer">
+                            <td class="py-4 px-6 text-center text-gray-400">1201</td>
+                            <td class="py-4 px-6 text-gray-500">상권분석</td>
+                            <td class="py-4 px-6 hover:text-blue-600 transition">의정부 금오동 5~6층 신축 건물 층별 아이템 기획 (피드백 요청)</td>
+                            <td class="py-4 px-6 text-gray-600">건물주코칭</td>
+                            <td class="py-4 px-6 text-center text-gray-500">92</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 페이지네이션 -->
+                <div class="py-6 flex justify-center items-center space-x-2 border-t border-gray-200">
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-300 text-gray-500 hover:bg-gray-100">&lt;</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded bg-slate-900 text-white font-bold">1</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-300 text-gray-600 hover:bg-gray-100">2</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-300 text-gray-600 hover:bg-gray-100">3</button>
+                    <button class="w-8 h-8 flex items-center justify-center rounded border border-gray-300 text-gray-500 hover:bg-gray-100">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
