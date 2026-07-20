@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지식 마켓 | 부업가정신</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>body { font-family: 'Pretendard', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 내비게이션 바 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-slate-900 tracking-tight">부업가정신.</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="columns.html" class="text-gray-600 hover:text-slate-900 font-medium transition">전문 칼럼</a>
+                <a href="studies.html" class="text-gray-600 hover:text-slate-900 font-medium transition">실전 스터디</a>
+                <a href="market.html" class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1">지식 마켓</a>
+                <a href="board.html" class="text-gray-600 hover:text-slate-900 font-medium transition">자능사 라운지</a>
+                <a href="#" class="bg-slate-900 text-white px-5 py-2 rounded-md font-semibold hover:bg-slate-800 transition">가입하기</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 마켓 헤더 -->
+    <section class="bg-[#0f172a] text-white py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+                <div>
+                    <span class="text-blue-400 font-bold tracking-widest text-sm mb-3 block">PRO MARKET</span>
+                    <h1 class="text-4xl font-extrabold mb-4 tracking-tight">실전 비즈니스 에셋 (Assets)</h1>
+                    <p class="text-slate-300 text-lg max-w-2xl font-light">
+                        운영진의 철저한 실무 필터링을 거친 자료만 등록됩니다.<br>
+                        공간 밸류업 기획안부터 B2B 제안서, 디자인 템플릿까지 즉시 현업에 적용하세요.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 flex gap-4 text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-white">42</div>
+                        <div class="text-xs text-slate-400">검증된 자료</div>
+                    </div>
+                    <div class="w-px bg-slate-700"></div>
+                    <div>
+                        <div class="text-2xl font-bold text-blue-400">98%</div>
+                        <div class="text-xs text-slate-400">실무 적용률</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 카테고리 및 필터 -->
+    <section class="bg-white border-b border-gray-200 py-4 sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between overflow-x-auto">
+            <div class="flex gap-6 whitespace-nowrap text-sm font-semibold">
+                <a href="#" class="text-slate-900 border-b-2 border-slate-900 pb-2">전체보기</a>
+                <a href="#" class="text-gray-500 hover:text-slate-900 pb-2">기획 백서 (PDF)</a>
+                <a href="#" class="text-gray-500 hover:text-slate-900 pb-2">수익 시뮬레이터 (Excel)</a>
+                <a href="#" class="text-gray-500 hover:text-slate-900 pb-2">B2B 제안서 템플릿</a>
+                <a href="#" class="text-gray-500 hover:text-slate-900 pb-2">브랜딩 가이드</a>
+            </div>
+            <div class="hidden md:block relative">
+                <input type="text" placeholder="자료 검색..." class="bg-gray-100 border-none rounded-full px-4 py-2 text-sm focus:ring-2 focus:ring-blue-500 w-64">
+            </div>
+        </div>
+    </section>
+
+    <!-- 상품 리스트 -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 상품 1: 공실 밸류업 실무 백서 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                    <div class="h-48 bg-slate-900 relative p-6 flex flex-col justify-between">
+                        <span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded w-max">PDF 백서</span>
+                        <h3 class="text-white text-xl font-bold leading-tight">화양동 10-1 빌딩<br>공실 밸류업 기획안 원본</h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">죽은 상가를 살리는 코리빙/코워킹 복합 기획론</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">실제 진행된 건물 밸류업 프로젝트의 마스터플랜입니다. 공간 구성 도면, 예상 투자금, 그리고 층별 아이템 기획 논리가 그대로 담겨 있습니다.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">평점 5.0 (42)</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">판매 128</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="font-bold text-lg text-slate-900">45,000원</span>
+                            <button class="bg-slate-100 text-slate-700 px-4 py-2 rounded font-semibold text-sm hover:bg-slate-200 transition">장바구니</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품 2: B2B 제안서 템플릿 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                    <div class="h-48 bg-slate-200 relative p-6 flex flex-col justify-between" style="background-image: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);">
+                        <span class="bg-slate-700 text-white text-xs font-bold px-2 py-1 rounded w-max">PPT 템플릿</span>
+                        <h3 class="text-slate-900 text-xl font-bold leading-tight">상업용 부동산<br>B2B 매칭 및 MOU 제안서</h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">에이플러스리얼티 등 중개 법인 협력 제안 양식</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">확보된 공실을 기획하여 상업용 부동산 임대/매매 팀과 MOU를 맺을 때 사용하는 전문 제안서 포맷입니다. 신뢰감을 주는 워딩으로 구성되었습니다.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">평점 4.9 (18)</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">판매 56</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="font-bold text-lg text-slate-900">29,000원</span>
+                            <button class="bg-slate-100 text-slate-700 px-4 py-2 rounded font-semibold text-sm hover:bg-slate-200 transition">장바구니</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품 3: 디자인 가이드 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                    <div class="h-48 relative p-6 flex flex-col justify-between" style="background-color: #d1fae5;">
+                        <span class="bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded w-max">Figma 가이드</span>
+                        <h3 class="text-emerald-900 text-xl font-bold leading-tight">브랜드 톤앤매너<br>컬러 팔레트 및 로고 시안</h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">공간의 차이를 만드는 '라이트 그린' 포인트 활용법</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">진부한 그레이(Grey) 톤을 벗어나, 연두색(Light Green)을 베이스로 시각적 안정감을 주는 스터디 카페 및 휴식 공간 인테리어 가이드입니다.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">평점 5.0 (33)</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">판매 89</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="font-bold text-lg text-slate-900">35,000원</span>
+                            <button class="bg-slate-100 text-slate-700 px-4 py-2 rounded font-semibold text-sm hover:bg-slate-200 transition">장바구니</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품 4: 수익 시뮬레이터 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                    <div class="h-48 bg-emerald-900 relative p-6 flex flex-col justify-between">
+                        <span class="bg-emerald-500 text-white text-xs font-bold px-2 py-1 rounded w-max">Excel 자동화</span>
+                        <h3 class="text-white text-xl font-bold leading-tight">오토매장 수익률<br>자동 시뮬레이터</h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">무인 창고/빨래방 제외, 객단가 중심 분석기</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">회전율이 안 나오는 소형 평수 아이템의 리스크를 계산하고, 예약제 기반 고단가 공간 비즈니스의 예상 손익분기점(BEP)을 정확히 산출합니다.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">평점 4.8 (87)</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">판매 312</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="font-bold text-lg text-slate-900">19,000원</span>
+                            <button class="bg-slate-100 text-slate-700 px-4 py-2 rounded font-semibold text-sm hover:bg-slate-200 transition">장바구니</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품 5: 마케팅 템플릿 -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                    <div class="h-48 bg-blue-900 relative p-6 flex flex-col justify-between">
+                        <span class="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-max">운영 매뉴얼</span>
+                        <h3 class="text-white text-xl font-bold leading-tight">웰니스 테마 숙박<br>글로벌 인바운드 마케팅</h3>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition">외국인 관광객 타겟팅 및 예약 플랫폼 연동법</h4>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">도심 속 휴식 공간(레스텔 등)을 기획하여, 외국인 여행객의 인스타그램 리뷰를 유도하고 예약 채널을 다각화하는 홍보 템플릿과 매뉴얼입니다.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">평점 4.9 (24)</span>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">판매 65</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="font-bold text-lg text-slate-900">25,000원</span>
+                            <button class="bg-slate-100 text-slate-700 px-4 py-2 rounded font-semibold text-sm hover:bg-slate-200 transition">장바구니</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button class="bg-white border border-slate-300 text-slate-700 px-8 py-3 rounded-md font-semibold hover:bg-slate-50 transition shadow-sm">
+                    더 많은 실무 자료 보기
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-slate-400">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold text-white tracking-tight">부업가정신.</span>
+                <p class="text-sm mt-2">© 2026 부업가정신 커뮤니티. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition">이용약관</a>
+                <a href="#" class="hover:text-white transition">개인정보처리방침</a>
+                <a href="#" class="hover:text-white transition">지식 입점 문의</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
