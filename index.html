@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부업가정신 | 실전 비즈니스 커뮤니티</title>
+    <!-- Tailwind CSS CDN 로드 (디자인 및 레이아웃 용도) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 폰트 적용 (Pretendard) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .hero-bg { background-color: #0f172a; } /* 전문성을 강조하는 다크 네이비 톤 */
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 내비게이션 바 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-extrabold text-slate-900 tracking-tight">부업가정신.</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-slate-900 font-medium">전문 칼럼</a>
+                    <a href="#" class="text-gray-600 hover:text-slate-900 font-medium">실전 스터디</a>
+                    <a href="#" class="text-gray-600 hover:text-slate-900 font-medium">지식 마켓</a>
+                    <a href="#" class="text-gray-600 hover:text-slate-900 font-medium">자능사 라운지</a>
+                    <button class="bg-slate-900 text-white px-5 py-2 rounded-md font-semibold hover:bg-slate-800 transition">
+                        입회 신청
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 (메인 배너) -->
+    <section class="hero-bg text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <p class="text-slate-400 font-semibold mb-3 tracking-wide">직장인 제2본업 구축 커뮤니티</p>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    가벼운 용돈벌이가 아닌,<br>
+                    <span class="text-blue-400">내 삶의 비즈니스</span>를 기획합니다.
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 font-light">
+                    자극적인 수익 인증과 사기성 정보를 배제합니다. 우리는 철저한 '부업가정신'을 바탕으로 스스로 자립하는 비즈니스 설계자, <strong class="text-white font-semibold">'자능사'</strong>들의 모임입니다.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-blue-500 transition shadow-lg">
+                        자능사 자격 알아보기
+                    </button>
+                    <button class="bg-transparent border border-slate-500 text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-slate-800 transition">
+                        커뮤니티 둘러보기
+                    </button>
+                </div>
+            </div>
+            <!-- 우측 이미지 영역 (일러스트나 공간 사진으로 대체 가능) -->
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                <div class="w-full max-w-md bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 relative">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full">모집 마감 임박</div>
+                    <h3 class="text-xl font-bold mb-4 border-b border-slate-600 pb-2">🔥 실시간 핫 스터디</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-200">무인/자동화 공간 비즈니스 1기</span>
+                            <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">D-3</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-200">B2B 지식 창업 마스터 클래스</span>
+                            <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">D-5</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-200">오토매장 수익 파이프라인 분석</span>
+                            <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">마감</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 서비스 특징 섹션 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">왜 '부업가정신' 인가요?</h2>
+                <p class="text-gray-500 font-medium">검증되지 않은 얕은 정보 대신, 실전에서 통하는 밀도 높은 시스템을 제공합니다.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- 특징 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-slate-900 text-white rounded-lg flex items-center justify-center text-xl font-bold mb-6">1</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">전문가 수준의 칼럼</h3>
+                    <p class="text-gray-600 leading-relaxed">단순한 N잡러의 후기가 아닙니다. 기획, 세무, 상권 분석 등 실무진이 검증한 비즈니스 모델 구축 아티클을 제공합니다.</p>
+                </div>
+                <!-- 특징 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center text-xl font-bold mb-6">2</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">밀도 높은 기수제 스터디</h3>
+                    <p class="text-gray-600 leading-relaxed">목표 달성형 기수제 스터디와 보증금 제도를 통해, 실행하지 않으면 안 되는 압도적인 환경을 제공합니다.</p>
+                </div>
+                <!-- 특징 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-slate-900 text-white rounded-lg flex items-center justify-center text-xl font-bold mb-6">3</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">검증된 지식 마켓</h3>
+                    <p class="text-gray-600 leading-relaxed">운영진의 철저한 필터링을 거친 전자책, 템플릿, VOD 강의만 입점하여 불필요한 비용 낭비를 막습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-slate-900 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-slate-400">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold text-white tracking-tight">부업가정신.</span>
+                <p class="text-sm mt-2">© 2026 부업가정신. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition">이용약관</a>
+                <a href="#" class="hover:text-white transition">개인정보처리방침</a>
+                <a href="#" class="hover:text-white transition">고객센터</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
