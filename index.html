@@ -14,38 +14,61 @@
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
+                <!-- 로고 -->
                 <div class="flex items-center">
                     <a href="index.html" class="text-2xl font-extrabold text-slate-900 tracking-tight">부업가정신.</a>
                 </div>
+                
+                <!-- PC 버전 메뉴 -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="columns.html" class="text-gray-600 hover:text-slate-900 font-medium transition">전문 칼럼</a>
                     <a href="studies.html" class="text-gray-600 hover:text-slate-900 font-medium transition">실전 스터디</a>
                     <a href="market.html" class="text-gray-600 hover:text-slate-900 font-medium transition">지식 마켓</a>
                     <a href="board.html" class="text-gray-600 hover:text-slate-900 font-medium transition">자능사 라운지</a>
-                    <a href="#" class="bg-slate-900 text-white px-5 py-2 rounded-md font-semibold hover:bg-slate-800 transition">
+                    <a href="#" class="bg-slate-900 text-white px-5 py-2 rounded-md font-semibold hover:bg-slate-800 transition shadow-sm">
                         가입하기
                     </a>
                 </div>
+
+                <!-- 모바일 햄버거 버튼 -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모바일 드롭다운 메뉴 (기본 숨김) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full left-0">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="columns.html" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-50 hover:text-emerald-600">전문 칼럼</a>
+                <a href="studies.html" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-50 hover:text-emerald-600">실전 스터디</a>
+                <a href="market.html" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-50 hover:text-emerald-600">지식 마켓</a>
+                <a href="board.html" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-700 hover:bg-gray-50 hover:text-emerald-600">자능사 라운지</a>
+                <a href="#" class="block px-3 py-3 mt-4 text-center rounded-md text-base font-bold bg-slate-900 text-white hover:bg-slate-800 shadow-md">가입하기</a>
             </div>
         </div>
     </nav>
 
     <!-- 1. 히어로 섹션 (가치 제안) -->
-    <section class="bg-[#0f172a] text-white py-28 relative overflow-hidden">
+    <section class="bg-slate-900 text-white py-24 md:py-32 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-blue-400 text-sm font-bold mb-6 tracking-widest">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-slate-800 border border-slate-700 text-emerald-400 text-xs font-bold mb-6 tracking-widest shadow-sm">
                 CERTIFIED BUSINESS BUILDERS
             </span>
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
                 월급 너머의 삶,<br>
-                우리는 <span class="text-blue-500">내 이름으로 된 비즈니스를 짓습니다.</span>
+                우리는 <span class="text-emerald-500">내 이름으로 된 비즈니스를 짓습니다.</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-slate-300 mb-10 font-light max-w-3xl mx-auto leading-relaxed px-4">
                 '월 1,000만 원 보장' 같은 자극적인 멘트는 쓰지 않습니다. 우리는 철저한 기획과 실행을 바탕으로 수익 시스템을 설계하는 실전 네트워크입니다.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#" class="bg-blue-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-500 transition shadow-lg shadow-blue-900/50">자능사 커뮤니티 가입하기</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 px-4">
+                <a href="#" class="bg-emerald-600 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-emerald-500 transition shadow-lg shadow-emerald-900/40">자능사 커뮤니티 가입하기</a>
                 <a href="columns.html" class="bg-transparent border border-slate-500 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-slate-800 transition">핵심 기획안 열람하기</a>
             </div>
         </div>
@@ -55,30 +78,30 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">자본을 통제하는 3가지 실전 역량</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4 tracking-tight">자본을 통제하는 3가지 실전 역량</h2>
                 <p class="text-gray-500 text-lg">단순한 정보 공유를 넘어, 실제 비즈니스 모델(BM)을 기획하고 실행하는 법을 연구합니다.</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-10">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- 역량 1 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center text-2xl mb-6">🏢</div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:border-emerald-100 transition duration-300 group">
+                    <div class="w-14 h-14 bg-white text-slate-700 shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-50 group-hover:text-emerald-600 transition">🏢</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">공실 밸류업 (Value-up)</h3>
                     <p class="text-gray-600 leading-relaxed mb-4">
                         수익률이 떨어진 이면도로 상가나 유휴 공간의 잠재력을 분석합니다. 파티룸, 웰니스 스테이 등 명확한 타겟과 테마를 가진 공간을 기획해 자산의 본질적 가치를 끌어올립니다.
                     </p>
                 </div>
                 <!-- 역량 2 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
-                    <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center text-2xl mb-6">⚙️</div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:border-emerald-100 transition duration-300 group">
+                    <div class="w-14 h-14 bg-white text-slate-700 shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-50 group-hover:text-emerald-600 transition">⚙️</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">무인화 및 오토매장 세팅</h3>
                     <p class="text-gray-600 leading-relaxed mb-4">
-                        <strong class="text-slate-900">단가와 회전율의 한계가 명확한 단순 무인 아이템은 배제합니다.</strong> 예약제 기반의 프라이빗 공간 기획과 시설 관리 자동화를 통해, 내 시간 투입을 최소화하는 진짜 오토 모델을 구축합니다.
+                        <strong class="text-slate-900">단가와 회전율의 한계가 명확한 단순 아이템은 배제합니다.</strong> 예약제 기반의 프라이빗 공간 기획과 시설 관리 자동화를 통해, 내 시간 투입을 최소화하는 진짜 오토 모델을 구축합니다.
                     </p>
                 </div>
                 <!-- 역량 3 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition duration-300">
-                    <div class="w-14 h-14 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center text-2xl mb-6">🤝</div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:border-emerald-100 transition duration-300 group">
+                    <div class="w-14 h-14 bg-white text-slate-700 shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-50 group-hover:text-emerald-600 transition">🤝</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">B2B 네트워크 및 브랜딩</h3>
                     <p class="text-gray-600 leading-relaxed mb-4">
                         완성된 공간 기획을 부동산 파트너사나 임대인에게 제안하는 B2B 전략을 배웁니다. 공간의 톤앤매너에 맞는 시각적 브랜딩을 더해 비즈니스의 신뢰도를 극대화합니다.
@@ -88,39 +111,39 @@
         </div>
     </section>
 
-    <!-- 3. 최신 실전 스터디 및 라운지 동향 -->
-    <section class="py-24 bg-slate-900 text-white">
+    <!-- 3. 최신 실전 스터디 동향 -->
+    <section class="py-24 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                    <h2 class="text-3xl font-bold mb-4">지금 '자능사'들이 기획 중인 프로젝트</h2>
-                    <p class="text-slate-400">책상 앞 이론이 아닌, 현장에서 돌아가는 리얼타임 비즈니스 스터디</p>
+                    <h2 class="text-3xl font-bold mb-4 text-slate-900 tracking-tight">지금 '자능사'들이 기획 중인 프로젝트</h2>
+                    <p class="text-gray-500">책상 앞 이론이 아닌, 현장에서 돌아가는 리얼타임 비즈니스 스터디</p>
                 </div>
-                <a href="studies.html" class="text-blue-400 hover:text-blue-300 font-semibold mt-4 md:mt-0 flex items-center gap-2">
+                <a href="studies.html" class="text-emerald-600 hover:text-emerald-700 font-bold mt-4 md:mt-0 flex items-center gap-2 transition">
                     스터디 전체보기 <span aria-hidden="true">&rarr;</span>
                 </a>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- 스터디 카드 1 -->
-                <div class="bg-slate-800 rounded-xl p-8 border border-slate-700 relative overflow-hidden group cursor-pointer hover:border-blue-500 transition">
-                    <div class="absolute top-0 right-0 bg-blue-600 text-xs font-bold px-3 py-1 rounded-bl-lg">오프라인 기수제</div>
-                    <h3 class="text-2xl font-bold mb-3 group-hover:text-blue-400 transition">대형 상업시설 공간기획 실전반</h3>
-                    <p class="text-slate-400 mb-6 line-clamp-2">대구 스펙트럼시티 등 150평 이상 대형 평수의 상업 공간을 타겟으로, 프리미엄 키즈카페 및 복합 문화공간 입지를 분석하고 수익 모델을 설계합니다.</p>
-                    <div class="flex items-center gap-4 text-sm text-slate-300">
-                        <span class="flex items-center gap-1">📍 강남역</span>
-                        <span class="flex items-center gap-1">👥 잔여 2석</span>
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm relative overflow-hidden group cursor-pointer hover:border-emerald-500 hover:shadow-lg transition">
+                    <div class="absolute top-0 right-0 bg-slate-900 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-sm">오프라인 기수제</div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-emerald-600 transition tracking-tight">대형 상업시설 공간기획 실전반</h3>
+                    <p class="text-gray-500 mb-6 line-clamp-2 leading-relaxed">대구 스펙트럼시티 등 150평 이상 대형 평수의 상업 공간을 타겟으로, 프리미엄 복합 문화공간 입지를 분석하고 수익 모델을 설계합니다.</p>
+                    <div class="flex items-center gap-4 text-sm font-semibold text-slate-700">
+                        <span class="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">📍 강남역</span>
+                        <span class="flex items-center gap-1 bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full">👥 잔여 2석</span>
                     </div>
                 </div>
 
                 <!-- 스터디 카드 2 -->
-                <div class="bg-slate-800 rounded-xl p-8 border border-slate-700 relative overflow-hidden group cursor-pointer hover:border-emerald-500 transition">
-                    <div class="absolute top-0 right-0 bg-slate-600 text-xs font-bold px-3 py-1 rounded-bl-lg">온라인 ZOOM</div>
-                    <h3 class="text-2xl font-bold mb-3 group-hover:text-emerald-400 transition">소형 신축상가 아이템 발굴반</h3>
-                    <p class="text-slate-400 mb-6 line-clamp-2">무인 창고나 코인빨래방 등 낮은 객단가 아이템을 배제하고, 의정부 등 신축 5~6층 건물의 가치를 극대화할 수 있는 예약제 베이스의 고부가가치 아이템을 발굴합니다.</p>
-                    <div class="flex items-center gap-4 text-sm text-slate-300">
-                        <span class="flex items-center gap-1">📍 온라인</span>
-                        <span class="flex items-center gap-1">👥 모집중</span>
+                <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm relative overflow-hidden group cursor-pointer hover:border-emerald-500 hover:shadow-lg transition">
+                    <div class="absolute top-0 right-0 bg-slate-600 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-sm">온라인 ZOOM</div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-emerald-600 transition tracking-tight">소형 신축상가 아이템 발굴반</h3>
+                    <p class="text-gray-500 mb-6 line-clamp-2 leading-relaxed">무인 창고 등 낮은 객단가 아이템을 배제하고, 신축 5~6층 건물의 가치를 극대화할 수 있는 고부가가치 아이템을 발굴합니다.</p>
+                    <div class="flex items-center gap-4 text-sm font-semibold text-slate-700">
+                        <span class="flex items-center gap-1 bg-gray-100 px-3 py-1 rounded-full">📍 온라인</span>
+                        <span class="flex items-center gap-1 bg-blue-50 text-blue-700 px-3 py-1 rounded-full">👥 모집중</span>
                     </div>
                 </div>
             </div>
@@ -128,34 +151,44 @@
     </section>
 
     <!-- 4. CTA (가입 유도) 섹션 -->
-    <section class="py-24 bg-blue-600 text-center">
+    <section class="py-24 bg-slate-900 text-center border-t border-slate-800">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">준비된 기획자들의 네트워크에 합류하세요</h2>
-            <p class="text-blue-100 text-lg mb-10 leading-relaxed">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">준비된 기획자들의 네트워크에 합류하세요</h2>
+            <p class="text-slate-300 text-lg md:text-xl mb-10 leading-relaxed font-light">
                 언제까지 흩어진 정보만 모으고 계실 건가요?<br>
-                부동산 네트워크, 시설 관리 전문가, 브랜딩 기획자가 모여있는 실전 커뮤니티가 당신의 제2본업을 앞당깁니다.
+                부동산 네트워크, 공간 기획자가 모여있는 실전 커뮤니티가 당신의 제2본업을 앞당깁니다.
             </p>
-            <button class="bg-white text-blue-700 px-10 py-4 rounded-md font-bold text-xl hover:bg-gray-50 transition shadow-xl">
+            <button class="bg-emerald-600 text-white px-10 py-4 rounded-md font-bold text-xl hover:bg-emerald-500 transition shadow-lg shadow-emerald-900/50">
                 자능사 1기 가입하기
             </button>
-            <p class="text-blue-200 text-sm mt-6">* 현재 베타 테스트 기간으로, 심사를 거쳐 입회를 승인하고 있습니다.</p>
+            <p class="text-slate-500 text-sm mt-6 font-medium">* 현재 베타 테스트 기간으로, 심사를 거쳐 입회를 승인하고 있습니다.</p>
         </div>
     </section>
 
     <!-- 푸터 -->
-    <footer class="bg-slate-950 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-slate-400">
-            <div class="mb-4 md:mb-0">
-                <span class="text-xl font-bold text-white tracking-tight">부업가정신.</span>
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-gray-500">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <span class="text-xl font-bold text-slate-900 tracking-tight">부업가정신.</span>
                 <p class="text-sm mt-2">© 2026 부업가정신 커뮤니티. All rights reserved.</p>
             </div>
-            <div class="flex space-x-6 text-sm">
-                <a href="#" class="hover:text-white transition">이용약관</a>
-                <a href="#" class="hover:text-white transition">개인정보처리방침</a>
-                <a href="#" class="hover:text-white transition">제휴 문의</a>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-slate-900 transition">이용약관</a>
+                <a href="#" class="hover:text-slate-900 transition">개인정보처리방침</a>
+                <a href="#" class="hover:text-slate-900 transition">제휴 문의</a>
             </div>
         </div>
     </footer>
+
+    <!-- 모바일 메뉴 동작을 위한 자바스크립트 -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
